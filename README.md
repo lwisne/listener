@@ -1,6 +1,21 @@
 Clarius Listener API
 ====================
 
+Google Notes:
+- To build the console app (assuming you are in the root directory)
+  - unzip the libraries of the OS you are building on
+    - `unzip lib/linux.zip`
+  - move unzipped files into a lib directory under src
+    - `mkdir src/lib`
+    - `mv lib/liblisten* src/lib`
+  - add the new directory to LD_LIBRARY_PATH
+    - `LD_LIBRARY_PATH=/usr/local/google/home/lwisne/Code/listener/src/lib;$LD_LIBRARY_PATH`
+    - Change the path to have your name!
+  - move to the build directory, build, and run
+    - `cd src/example/console`
+    - `make`
+    - `build/console -p<port> -a<port>`
+
 This repository contains all related items for the Clarius Listen API
 
 Release Cycle:
