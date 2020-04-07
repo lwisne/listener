@@ -7,10 +7,12 @@ Google Notes:
     - `unzip lib/linux.zip`
   - move unzipped files into a lib directory under src
     - `mkdir src/lib`
-    - `mv lib/liblisten* src/lib`
+    - `mv liblisten* src/lib`
   - add the new directory to LD_LIBRARY_PATH
-    - `LD_LIBRARY_PATH=/usr/local/google/home/lwisne/Code/listener/src/lib;$LD_LIBRARY_PATH`
+    - `LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/google/home/lwisne/Code/listener/src/lib`
+    - `export LD_LIBRARY_PATH`
     - Change the path to have your name!
+    - Note you will have to do this every time you open a new terminal unless you make a change to your .bashrc/.bash_profile
   - move to the build directory, build, and run
     - `cd src/example/console`
     - `make`
